@@ -1,9 +1,9 @@
 const https = require('https')
 
-const cookie = process.env.TEST_COOKIE
+const cookie = 'tp: 123;'
 
 const options = {
-  hostname: 'https://chengzhx76.cn',
+  hostname: 'chengzhx76.cn',
   port: 443,
   path: '/pusher-test/ping?functionId=signBeanIndex&appid=ld',
   menthod: 'POST',
