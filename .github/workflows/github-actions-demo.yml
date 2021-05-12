@@ -6,9 +6,9 @@ name: GitHub Actions Demo
 #     - cron: '*/5 * * * *'
 
 on:
-  push:
+  # push:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '0 3 * * *'
 
 env:
   TEST_COOKIE: ${{ secrets.TEST_COOKIE }}
