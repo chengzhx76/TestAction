@@ -18,7 +18,7 @@ const server = http.createServer((req, res) => {
 setTimeout(() => {
   console.log("关闭 server")
   server.close()
-}, 10000)
+}, 300000)
 
 
 
