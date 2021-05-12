@@ -1,9 +1,4 @@
-name: GitHub Actions Demo
-
-# on:
-#   workflow_dispatch: # 手动触发
-#   schedule:
-#     - cron: '*/5 * * * *'
+name: 'GitHub Actions Bot'
 
 on:
   push:
@@ -14,10 +9,8 @@ env:
   TEST_COOKIE: ${{ secrets.TEST_COOKIE }}
 
 jobs:
-  # build:
   bot:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout codes
         uses: actions/checkout@v2
