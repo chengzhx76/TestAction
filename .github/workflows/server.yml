@@ -1,4 +1,4 @@
-name: Run periodically.
+name: Run Node.js Server.
 
 on:
   workflow_dispatch:
