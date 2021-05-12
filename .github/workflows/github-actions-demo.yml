@@ -3,7 +3,7 @@ name: GitHub Actions Demo
 on:
   workflow_dispatch: # 手动触发
   schedule:
-    - cron: */5 * * * *
+    - cron: '*/5 * * * *'
 
 env:
   TEST_COOKIE: ${{ secrets.TEST_COOKIE }}
