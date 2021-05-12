@@ -6,15 +6,16 @@ name: GitHub Actions Demo
 #     - cron: '*/5 * * * *'
 
 on:
-  # push:
+  push:
   schedule:
-    - cron: '0 3 * * *'
+    - cron: '*/5 * * * *'
 
 env:
   TEST_COOKIE: ${{ secrets.TEST_COOKIE }}
 
 jobs:
-  build:
+  # build:
+  bot:
     runs-on: ubuntu-latest
 
     steps:
