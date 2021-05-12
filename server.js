@@ -1,6 +1,11 @@
-const http = require('http');
+const http = require('http')
+const https = require('https')
 
-console.log(getIPAddress())
+https.get(`https://chengzhx76.cn/pusher-test/ping`, (response) => {
+  console.log(`状态码: ${response.statusCode}`);
+})
+
+console.log('本地IP：' + getIPAddress())
 
 const server = http.createServer((req, res) => {
     console.log(req.connection.remoteAddress)
@@ -14,6 +19,10 @@ setTimeout(() => {
   console.log("关闭 server")
   server.close()
 }, 10000)
+
+
+
+
 
 
 function getIPAddress() {
