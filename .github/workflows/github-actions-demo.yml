@@ -1,9 +1,10 @@
 name: 'GitHub Actions Bot'
 
 on:
-  push:
-  #schedule:
-    #- cron: '0 * * * *'
+  workflow_dispatch:
+  # push:
+  # schedule:
+    # - cron: '0 * * * *'
 
 env:
   TEST_COOKIE: ${{ secrets.TEST_COOKIE }}
